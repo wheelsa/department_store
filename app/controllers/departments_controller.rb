@@ -9,6 +9,14 @@ class DepartmentsController < ApplicationController
 
   def edit
   end
+  
+  def update
+    if @department = Department.update(department_params)
+      redirect_to departments_path
+    else
+      render :edit
+    end 
+  end 
 
   def new
     @department = Department.new
@@ -24,6 +32,8 @@ class DepartmentsController < ApplicationController
   end 
 
   def destroy
+    @department = Department.find(params[:id]).destroy
+    redirect_to departments_path
   end 
 
 private 
