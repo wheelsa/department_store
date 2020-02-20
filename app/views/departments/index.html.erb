@@ -1,9 +1,12 @@
 <h1>Welcome to Clackamas Mall </h1>
 <h2> This is a directory of our Departments!</h2>
+<%= link_to "Create a New Department", new_department_path%>
 <br />
 <%@departments.each do |department|%>
   <h2> <%= "#{department.name} Department" %> </h2>
   <h3> <%= "Category: #{department.category}"%> </h3>
   <h3> <%= "Location: #{department.floor}"%> </h3>
+  <h4> <%= link_to "Learn more about the #{department.name} Department.", department_path(department)%>
+  <br />
   <br />
   <%end%>
