@@ -1,2 +1,14 @@
-<h1>Comments#index</h1>
-<p>Find me in app/views/comments/index.html.erb</p>
+<h1><%= "#{@item.name} Page" %></h1>
+<h2>Here are current comments of our product</h2>
+<%= link_to "Create a New Comment", new_item_comment_path%>
+<ul><% @comments.each do |comment|%>
+ <h3><%="Subject: #{comment.subject}"%></h3>
+ <li><%= "Review: #{comment.review}"%></li>
+ <li><%= "Rating: #{comment.rating}" %></li>
+ <br />
+ 
+<%= link_to "Learn more about #{comment.subject}", item_comments_path(comment) %>
+ <br />
+<%end%>
+</ul>
+<p><%= link_to "Back", departments_path %></p>

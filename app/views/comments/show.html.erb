@@ -1,2 +1,7 @@
-<h1>Comments#show</h1>
-<p>Find me in app/views/comments/show.html.erb</p>
+<h1><%= "#{@item.name} Comments" %> - <%= "#{@comment.subject} Page"%></h2>
+<h2><%="Subject: #{@comment.subject}"%> </h2>
+ <h3><%= "Review: #{@comment.review}"%></h3>
+ <h3><%= "Rating: #{@comment.rating}" %></h3>
+<%= link_to 'Edit Item', edit_item_comment_path([@item, @comment]) %>
+<%= link_to 'Delete Item', [@item, @comment], method: :delete %>
+<%= link_to "Back to #{@item.name}.", item_comments_path(@item) %>

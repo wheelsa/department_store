@@ -11,40 +11,75 @@ require 'faker'
     jewelry.items.create(name: Faker::Commerce.product_name, 
                         quantity: rand(5...75), 
                         description: Faker::Quote.famous_last_words)
+            # 7.times do item.comments.create(
+            #             subject: Faker::FunnyName.name,
+            #             review: Faker::Quote.most_interesting_man_in_the_world,
+            #             rating: rand(1..5))
+            # end
   end 
   perfume = Department.create(name: 'Perfume', category:'Jewelry and Perfume', floor: "First Floor - Central")
   5.times do
     perfume.items.create(name: Faker::Commerce.product_name, 
                          quantity: rand(5...75), 
                         description: Faker::Quote.famous_last_words)
+              # 7.times do item.comments.create(
+              #             subject: Faker::FunnyName.name,
+              #             review: Faker::Quote.most_interesting_man_in_the_world,
+              #             rating: rand(1..5))
+              # end
   end 
   mens_clothing = Department.create(name: 'Mens Clothing', category:'Clothing', floor: "Second Floor - NW corner")
   5.times do
     mens_clothing.items.create(name: Faker::Commerce.product_name, 
                         quantity: rand(5...75), 
                         description: Faker::Quote.famous_last_words)
+              #           7.times do item.comments.create(
+              #             subject: Faker::FunnyName.name,
+              #             review: Faker::Quote.most_interesting_man_in_the_world,
+              #             rating: rand(1..5))
+              # end
   end 
   womens_clothing = Department.create(name: 'Womens Clothing', category:'Clothing', floor: "Second Floor - SW corner")
   5.times do
     womens_clothing.items.create(name: Faker::Commerce.product_name, 
                         quantity: rand(5...75), 
                         description: Faker::Quote.famous_last_words)
+              #           7.times do item.comments.create(
+              #             subject: Faker::FunnyName.name,
+              #             review: Faker::Quote.most_interesting_man_in_the_world,
+              #             rating: rand(1..5))
+              # end
   end 
   appliances = Department.create(name: 'Appliances', category:'Home Goods', floor: "Third Floor - Central")
   5.times do
-    appliances.items.create(name: Faker::Commerce.product_name, 
+      appliances.items.create(name: Faker::Commerce.product_name, 
                         quantity: rand(5...75), 
                         description: Faker::Quote.famous_last_words)
+              #           7.times do item.comments.create(
+              #             subject: Faker::FunnyName.name,
+              #             review: Faker::Quote.most_interesting_man_in_the_world,
+              #             rating: rand(1..5))
+              # end
   end 
   shoes = Department.create(name: 'Shoes', category:'Shoes, Socks and Underwear', floor: "First Floor - SW corner")
   5.times do
-    shoes.items.create(name: Faker::Commerce.product_name, 
+   shoes.items.create(name: Faker::Commerce.product_name, 
                         quantity: rand(5...75), 
                         description: Faker::Quote.famous_last_words)
+              #           7.times do item.comments.create(
+              #             subject: Faker::FunnyName.name,
+              #             review: Faker::Quote.most_interesting_man_in_the_world,
+              #             rating: rand(1..5))
+              # end
   end 
   underwear = Department.create(name: 'Underwear', category:'Shoes, Socks and Underwear', floor: "First Floor - NE corner")
   5.times do
     underwear.items.create(name: Faker::Commerce.product_name, 
                         quantity: rand(5...75), 
                         description: Faker::Quote.famous_last_words)
+              #           7.times do item.comments.create(
+              #             subject: Faker::FunnyName.name,
+              #             review: Faker::Quote.most_interesting_man_in_the_world,
+              #             rating: rand(1..5))
+              # end
   end 
