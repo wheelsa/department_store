@@ -1,3 +1,48 @@
-// Place all the styles related to the items controller here.
+// Place all the styles related to the departments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body { 
+  font-family: Arial;
+  background-color: #0f0e17;
+
+}
+h1 {
+  color: #fffffe
+}
+h2 {
+  color: #fffffe
+}
+h3 {
+  color: #fffffe
+}
+
+p {
+  color: #a7a9be;
+
+}
+button {
+  width:10%;
+  height:45px;
+  border-radius:3px;
+  background-color:#ff8906;
+  color:#001e1d;
+  font-family: Arial;
+  cursor:pointer;
+  }
+  a {
+    color: #ff8906;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #e53170;
+    text-decoration: none;
+  }
+  ul {
+    color: #f25f4c;
+  
+  }

@@ -1,12 +1,12 @@
 <h1><%= @item.id ? 'Edit Item' : 'Create Item' %></h1>
 <hr />
 <%= form_for [@department, @item] do |f| %>
- <%= f.label :name %>
- <%= f.text_field :name, required: true, autofocus: true %>
+ <p> <%= f.label :name %></p>
+ <p> <%= f.text_field :name, required: true, autofocus: true %></p>
  <br />
- <%= f.label :quantity %>
- <%= f.text_area :quantity, required: true %>
-  <%= f.label :description %>
- <%= f.text_area :description, required: true %>
- <%= f.submit %>
+ <p> <%= f.label :quantity %></p>
+ <p> <%= f.text_area :quantity, required: true %></p>
+<p> <%= f.label :description %>
+<p>  <%= f.text_area :description, required: true %> </p>
+<p>  <%= f.submit %></p>
  <%end%>
