@@ -1,0 +1,13 @@
+<h1><%= "#{@department.name} Department Page" %></h1>
+<h2>Here is some of our Current Inventory:</h2>
+<%= link_to "Create a New Item", new_department_item_path%>
+<ul><% @items.each do |item|%>
+ <h3><%="Name: #{item.name}"%></h3>
+ <li><%= "Quantity: #{item.quantity}"%></li>
+ <li><%= "Description: #{item.description}" %></li>
+ 
+<%= link_to "Learn more about #{item.name}", [@department, item] %>
+ <br />
+<%end%>
+</ul>
+<p><%= link_to "Back", departments_path %></p>

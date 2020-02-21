@@ -8,6 +8,7 @@ class DepartmentsController < ApplicationController
   end
 
   def edit
+    
   end
   
   def update
